@@ -139,4 +139,58 @@ nav ul li a:hover {
   }
 }
 
-/* Barra de navegação e logo - Fim */ ;
+/* Barra de navegação e logo - Fim */
+
+/* Corpo do site - Início */
+.main-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 150px;
+  margin-top: 150px;
+  grid-gap: 150px;
+}
+
+.header-main-content-h1 {
+  font-size: 63px;
+  color: #242d52;
+}
+
+.header-main-content-h1 span {
+  color: #4169e1;
+}
+
+.header-content button,
+form button {
+  padding: 12px 35px;
+  background-color: #4169e1;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.cta:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 900px) {
+  .main-header {
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-top: 90px;
+    grid-gap: 60px;
+    text-align: center;
+  }
+
+  .header-main-content-h1 {
+    font-size: 43px;
+  }
+}
+
+/* Corpo do site - Fim */ ;
