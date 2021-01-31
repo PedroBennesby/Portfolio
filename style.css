@@ -193,4 +193,65 @@ form button {
   }
 }
 
-/* Corpo do site - Fim */ ;
+/* Corpo do site - Fim */
+
+/* Sobre - Início */
+
+.about-section {
+  margin-top: 150px;
+}
+
+.about-heading {
+  text-align: center;
+}
+
+.about-heading h1 {
+  color: #4169e1;
+  font-size: 53px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 60px;
+}
+
+.about img {
+  border-radius: 10px;
+}
+
+.about h1 {
+  font-size: 53px;
+  font-weight: 900;
+  color: #4169e1;
+}
+
+.about p {
+  font-size: 21px;
+  color: #a9a9a9;
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+
+  .about h1 {
+    font-size: 43px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}
+
+/* Sobre - Fim */
