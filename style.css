@@ -255,3 +255,44 @@ form button {
 }
 
 /* Sobre - Fim */
+
+/* Habilidades - início */
+
+.skill-section {
+  margin-top: 150px;
+}
+
+.skill-section-heading {
+  text-align: center;
+  color: #4169e1;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 150px;
+  margin-left: 100px;
+  margin-top: 60px;
+}
+
+.skills-content p {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 21px;
+  color: #a9a9a9;
+}
+
+.skills-img img {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 900px) {
+  .skills {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+
+/* Habilidades - Fim */
