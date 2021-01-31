@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Bennesby - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Biblioteca de animações "animate.css" -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"
+    />
+    <!-- Biblioteca "WOW Js" -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  </head>
+  <body>
+    <!-- Barra de navegação e logo - Início -->
+    <header class="wow zoomIn" id="home">
+      <div class="logo">
+        <h1>Pedro Bennesby</h1>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#home1">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="hamburguer">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+    </header>
+    <!-- Barra de navegação e logo - Fim -->
+
+    <!-- Scripts - Início -->
+    <script>
+      // Script Barra de navegação - Início
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          document.getElementById("home").className = "sticky";
+        } else {
+          document.getElementById("home").className = "";
+        }
+      }
+      // Script Barra de navegação - Fim
+
+      // Script menu hamburguer - Início
+      document.querySelector(".hamburguer").addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(".navigation").classList.toggle("active");
+      });
+      // Script menu hamburguer - Fim
+
+      // WOW Js animação - Início
+      wow = new WOW({
+        boxclass: "wow",
+        animateClass: "animated",
+        offset: 0,
+        mobile: true,
+        live: trues,
+      });
+      wow.init();
+      // WOW Js animação - Fim
+    </script>
+    <!-- Scripts - Fim -->
+  </body>
+</html>
