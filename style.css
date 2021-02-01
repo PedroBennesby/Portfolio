@@ -296,3 +296,45 @@ form button {
 }
 
 /* Habilidades - Fim */
+
+/* Projetos - Início */
+
+.work-section {
+  margin-top: 150px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.work-section-heading {
+  text-align: center;
+  color: #4169e1;
+}
+
+.work img {
+  width: 350px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.work img:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 1060px) {
+  .work {
+    grid-template-columns: repeat(1, 350px);
+  }
+}
+
+/* Projetos - Fim */
