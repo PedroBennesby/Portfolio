@@ -25,7 +25,7 @@
           <li><a href="#about">Sobre</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#works">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
       <div class="hamburguer">
@@ -108,7 +108,7 @@
       <div class="work-section-heading">
         <h1 class="wow zoomIn">PROJETOS</h1>
       </div>
-      <div class="work wow zoomIn">
+      <div class="work wow zoomIn" id="works">
         <a
           href="https://pedrobennesby.github.io/Login-Glassmorphism/"
           target="_blank"
@@ -129,6 +129,70 @@
     </div>
 
     <!-- Projetos - Fim -->
+
+    <!-- Contato - Início -->
+
+    <div class="contact-heading wow zoomIn">
+      <h1>CONTATO</h1>
+    </div>
+    <div
+      class="container wow zoomIn"
+      style="animation-delay: 300ms"
+      id="contact"
+    >
+      <form
+        action="mailto:pedrobennesby@gmail.com"
+        method="POST"
+        enctype="multipart/form-data"
+        name="Form"
+      >
+        <div class="form-field">
+          <label for="fullname">Nome</label>
+          <input
+            type="text"
+            class="fullname"
+            name="fullname"
+            placeholder="Nome"
+            required
+            autofocus
+          />
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label for="message">Mensagem</label>
+          <textarea
+            name="message"
+            placeholder="Mensagem"
+            class="message"
+            required
+            rows="4"
+          ></textarea>
+        </div>
+        <div class="form-field btn">
+          <input type="submit" name="submit" class="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Contato - Fim -->
+
+    <!-- Footer - Início -->
+    <footer>
+      <div class="logo-socials">
+        <h1>Até mais, e obrigado por passar aqui!</h1>
+        <div class="logo-socials-soc"></div>
+      </div>
+    </footer>
+    <!-- Footer - Fim -->
 
     <!-- Scripts - Início -->
     <script>

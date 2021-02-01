@@ -338,3 +338,119 @@ form button {
 }
 
 /* Projetos - Fim */
+
+/* Contato - Início */
+
+.contact-heading {
+  text-align: center;
+  color: #4169e1;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.container {
+  background-color: #4169e1;
+  width: 400px;
+  margin: 80px auto;
+  margin-bottom: 140px;
+  border-radius: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 70px 30px 70px 30px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 40px;
+  font-size: 16px;
+  padding-left: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 23px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+textarea {
+  resize: none;
+  font-size: 16px;
+  padding: 6px 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+input[type="submit"] {
+  padding: 10px 50px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 40px;
+  background-color: #fff;
+  color: #4169e1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 415px) {
+  .container {
+    width: 350px;
+    margin: 50px auto 90px auto;
+  }
+}
+
+/* Contato - Fim */
+
+/* Footer - Início */
+
+footer {
+  background-color: #4169e1;
+  display: flex;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.logo-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-socials-soc {
+  margin-top: 30px;
+}
+
+.logo-socials-soc img {
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Footer - Fim */
