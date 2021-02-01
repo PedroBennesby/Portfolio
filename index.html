@@ -45,7 +45,7 @@
           Eu sou o <span>Pedro</span><br />
           Web/Front-end Developer
         </h1>
-        <button class="cta">Mande uma mensagem</button>
+        <a href="#contact"><button class="cta">Mande uma mensagem</button></a>
       </div>
       <div class="header-main-img wow zoomIn" style="animation-delay: 900ms">
         <img src="Imagens/Static assets-amico.svg" alt="" width="80%" />
@@ -141,10 +141,11 @@
       id="contact"
     >
       <form
-        action="mailto:pedrobennesby@gmail.com"
+        action="https://script.google.com/macros/s/AKfycbzN-0zxCmcSI8WJ5EfWtrsCKRK40amyXx5UM-Rhm27gi69fNiWpnnSf/exec"
         method="POST"
         enctype="multipart/form-data"
         name="Form"
+        onsubmit="setTimeout(function(){window.location.reload();},1000);"
       >
         <div class="form-field">
           <label for="fullname">Nome</label>
@@ -188,7 +189,7 @@
     <!-- Footer - Início -->
     <footer>
       <div class="logo-socials">
-        <h1>Até mais, e obrigado por passar aqui!</h1>
+        <h1>Muito obrigado!</h1>
         <div class="logo-socials-soc"></div>
       </div>
     </footer>
